@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install node-fetch@2
       - name: Run fetchRatings script
-        run: node data/fetchRatings.js
+        run: node src/fetchRatings.js
       - name: Commit and push changes
         run: |
           git config --local user.name 'github-actions[bot]'

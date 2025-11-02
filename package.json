@@ -13,7 +13,8 @@
   "jest": {
     "testEnvironment": "jsdom",
     "collectCoverageFrom": [
-      "src/script.js"
+      "src/script.js",
+      "src/fetchRatings.js"
     ],
     "coverageDirectory": "coverage",
     "coverageReporters": ["text", "lcov", "html"],

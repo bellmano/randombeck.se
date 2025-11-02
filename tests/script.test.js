@@ -10,7 +10,7 @@ global.beckMovies = [
 // Mock DOM methods that might be missing in JSDOM
 Element.prototype.scrollIntoView = jest.fn();
 
-describe('BeckMovieGenerator Script Tests', () => {
+describe('Main Script Tests', () => {
     let mockElements;
 
     beforeEach(() => {
