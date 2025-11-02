@@ -7,7 +7,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0118693/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/2d50e488dae9ce6ad32f/beck-lockpojken-1",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/meX63r4BVtMqyeUITLNoeI99ITj.jpg",
-        imdbRating: "6.2"
+        imdbRating: "9.9"
     },
     {
         number: 2,
