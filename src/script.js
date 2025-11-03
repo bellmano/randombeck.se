@@ -156,7 +156,7 @@ class BeckMovieGenerator {
     // Use crypto.getRandomValues for secure random number generation
     const range = max - min + 1;
     const randomBuffer = new Uint32Array(1);
-    window.crypto.getRandomValues(randomBuffer);
+    globalThis.crypto.getRandomValues(randomBuffer);
     const randomNumber = randomBuffer[0] / (0xFFFFFFFF + 1);
     return Math.floor(randomNumber * range) + min;
     }
@@ -270,7 +270,7 @@ class BeckMovieGenerator {
 document.addEventListener('DOMContentLoaded', () => {
     const generator = new BeckMovieGenerator();
     // Store reference to prevent it from being garbage collected
-    window.beckGenerator = generator;
+    globalThis.beckGenerator = generator;
 });
 
 // Add some nice visual feedback for inputs
