@@ -36,8 +36,8 @@ class BeckMovieGenerator {
         const minRangeInput = document.getElementById('min-range');
         const maxRangeInput = document.getElementById('max-range');
         const maxMovies = this.movies.length;
-        const minValue = parseInt(minRangeInput.value);
-        const maxValue = parseInt(maxRangeInput.value);
+        const minValue = Number.parseInt(minRangeInput.value);
+        const maxValue = Number.parseInt(maxRangeInput.value);
 
         // Set min/max bounds
         minRangeInput.min = 1;
@@ -90,8 +90,8 @@ class BeckMovieGenerator {
         }
 
         // Otherwise validate range inputs
-        const minRange = parseInt(document.getElementById('min-range').value);
-        const maxRange = parseInt(document.getElementById('max-range').value);
+        const minRange = Number.parseInt(document.getElementById('min-range').value);
+        const maxRange = Number.parseInt(document.getElementById('max-range').value);
 
         const isValid = minRange >= 1 && maxRange >= 1 && 
                        minRange <= this.movies.length && 
@@ -120,8 +120,8 @@ class BeckMovieGenerator {
             maxRange = this.movies.length;
         } else {
             // Use custom range
-            minRange = parseInt(document.getElementById('min-range').value);
-            maxRange = parseInt(document.getElementById('max-range').value);
+            minRange = Number.parseInt(document.getElementById('min-range').value);
+            maxRange = Number.parseInt(document.getElementById('max-range').value);
 
             // Validate ranges only if not using all movies
             if (minRange < 1 || maxRange < 1 || minRange > maxRange || 
@@ -268,7 +268,9 @@ class BeckMovieGenerator {
 
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new BeckMovieGenerator();
+    const generator = new BeckMovieGenerator();
+    // Store reference to prevent it from being garbage collected
+    window.beckGenerator = generator;
 });
 
 // Add some nice visual feedback for inputs
