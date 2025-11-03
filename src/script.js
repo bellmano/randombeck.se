@@ -25,7 +25,7 @@ class BeckMovieGenerator {
         minRangeInput.addEventListener('input', () => this.validateInputs());
         maxRangeInput.addEventListener('input', () => this.validateInputs());
 
-        // Handle "Alla filmer" checkbox
+        // Handle "All movies" checkbox
         allMoviesCheckbox.addEventListener('change', () => {
             this.toggleAllMoviesMode();
             this.validateInputs();
@@ -36,8 +36,8 @@ class BeckMovieGenerator {
         const minRangeInput = document.getElementById('min-range');
         const maxRangeInput = document.getElementById('max-range');
         const maxMovies = this.movies.length;
-        const minValue = parseInt(minRangeInput.value);
-        const maxValue = parseInt(maxRangeInput.value);
+        const minValue = Number.parseInt(minRangeInput.value);
+        const maxValue = Number.parseInt(maxRangeInput.value);
 
         // Set min/max bounds
         minRangeInput.min = 1;
@@ -69,7 +69,7 @@ class BeckMovieGenerator {
         const rangeSelector = document.getElementById('range-selector');
         
         if (allMoviesCheckbox.checked) {
-            // Dim the range selector when "Alla filmer" is checked
+            // Dim the range selector when "All movies" is checked
             rangeSelector.classList.add('dimmed');
         } else {
             // Enable range selector when unchecked
@@ -81,7 +81,7 @@ class BeckMovieGenerator {
         const allMoviesCheckbox = document.getElementById('all-movies-checkbox');
         const generateBtn = document.getElementById('generate-btn');
 
-        // If "Alla filmer" is checked, always allow generation
+        // If "All movies" is checked, always allow generation
         if (allMoviesCheckbox.checked) {
             generateBtn.disabled = false;
             generateBtn.style.opacity = '1';
@@ -90,8 +90,8 @@ class BeckMovieGenerator {
         }
 
         // Otherwise validate range inputs
-        const minRange = parseInt(document.getElementById('min-range').value);
-        const maxRange = parseInt(document.getElementById('max-range').value);
+        const minRange = Number.parseInt(document.getElementById('min-range').value);
+        const maxRange = Number.parseInt(document.getElementById('max-range').value);
 
         const isValid = minRange >= 1 && maxRange >= 1 && 
                        minRange <= this.movies.length && 
@@ -120,8 +120,8 @@ class BeckMovieGenerator {
             maxRange = this.movies.length;
         } else {
             // Use custom range
-            minRange = parseInt(document.getElementById('min-range').value);
-            maxRange = parseInt(document.getElementById('max-range').value);
+            minRange = Number.parseInt(document.getElementById('min-range').value);
+            maxRange = Number.parseInt(document.getElementById('max-range').value);
 
             // Validate ranges only if not using all movies
             if (minRange < 1 || maxRange < 1 || minRange > maxRange || 
@@ -153,7 +153,12 @@ class BeckMovieGenerator {
     }
 
     getRandomNumber(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+    // Use crypto.getRandomValues for secure random number generation
+    const range = max - min + 1;
+    const randomBuffer = new Uint32Array(1);
+    globalThis.crypto.getRandomValues(randomBuffer);
+    const randomNumber = randomBuffer[0] / (0xFFFFFFFF + 1);
+    return Math.floor(randomNumber * range) + min;
     }
 
     displayMovie(movie) {
@@ -263,7 +268,9 @@ class BeckMovieGenerator {
 
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new BeckMovieGenerator();
+    const generator = new BeckMovieGenerator();
+    // Store reference to prevent it from being garbage collected
+    globalThis.beckGenerator = generator;
 });
 
 // Add some nice visual feedback for inputs

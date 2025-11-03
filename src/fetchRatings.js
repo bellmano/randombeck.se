@@ -80,7 +80,7 @@ async function updateRatings() {
         result += `        title: "${movie.title}",\n`;
         result += `        year: ${movie.year},\n`;
         if (movie.description) {
-            result += `        description: "${movie.description.replace(/"/g, '\\"')}",\n`;
+            result += `        description: "${movie.description.replaceAll('"', '\\"')}",\n`;
         }
         result += `        imdbUrl: "${movie.imdbUrl}",\n`;
         if (movie.tv4playUrl) {
