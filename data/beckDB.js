@@ -7,6 +7,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0118693/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/2d50e488dae9ce6ad32f/beck-lockpojken-1",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/meX63r4BVtMqyeUITLNoeI99ITj.jpg",
+        runtime: "1h 30m",
         imdbRating: "6.2"
     },
     {
@@ -17,6 +18,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0139058/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/0eda9f5a27df3529d1f5/beck-mannen-med-ikonerna-2",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/z4MFGQkRrKBjbe3O6r8Q3SubvOx.jpg",
+        runtime: "1h 30m",
         imdbRating: "5.6"
     },
     {
@@ -27,6 +29,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0139059/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/82f126fa93409b1cdd8e/beck-vita-natter-3",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3vEbWte29I5sflPCsYTUs8Bf60C.jpg",
+        runtime: "1h 24m",
         imdbRating: "5.9"
     },
     {
@@ -37,6 +40,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0144786/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/5dba9c994bea72583814/beck-oga-for-oga-4",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/b5Z6pmKjitdUiKUeR8z7Fycxd1P.jpg",
+        runtime: "1h 29m",
         imdbRating: "6.2"
     },
     {
@@ -47,6 +51,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0147878/?ref_=ttep_ep_5",
         tv4playUrl: "https://www.tv4play.se/program/0b798328c892de746314/beck-pensionat-parlan-5",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hUrswRD5WxuF5WLGm5FxLH0qWah.jpg",
+        runtime: "1h 25m",
         imdbRating: "5.8"
     },
     {
@@ -57,6 +62,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0155535/?ref_=ttep_ep_6",
         tv4playUrl: "https://www.tv4play.se/program/19918f7ebb8129a63005/beck-monstret-6",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xtEGuBw5WR90Z46s3C1Ln1a1yqF.jpg",
+        runtime: "1h 26m",
         imdbRating: "6.1"
     },
     {
@@ -67,6 +73,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0155536/?ref_=ttep_ep_7",
         tv4playUrl: "https://www.tv4play.se/program/0d0c61b3202e4852c49d/beck-the-money-man-7",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9zBu3WlMsZlFZMN9v7rupJhOGvF.jpg",
+        runtime: "1h 26m",
         imdbRating: "6.5"
     },
     {
@@ -77,6 +84,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0122394/?ref_=ttep_ep_8",
         tv4playUrl: "https://www.tv4play.se/program/8e5c1225eeba21cb4aa1/beck-spar-i-morker-8",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2MIuUVyrIf5IEjWIEZOLgugaT3P.jpg",
+        runtime: "1h 25m",
         imdbRating: "6.2"
     },
     {
@@ -87,6 +95,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0276808/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/ef489b998713d100a507/beck-hamndens-pris-9",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oCJ5MQH8Kj9tF6JGHotzKB2RTpW.jpg",
+        runtime: "1h 31m",
         imdbRating: "6.5"
     },
     {
@@ -97,6 +106,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0300983/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/8e84aebba5b124113bad/beck-mannen-utan-ansikte-10",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wI6gV0MgWbPpECmWBVUpzuIScIm.jpg",
+        runtime: "1h 30m",
         imdbRating: "6.2"
     },
     {
@@ -107,6 +117,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0298753/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/ea2bcb2ef955d120b8d6/beck-kartellen-11",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/79IV1ZuzZmb2XJhvNSNhVmnPvMe.jpg",
+        runtime: "1h 28m",
         imdbRating: "5.8"
     },
     {
@@ -117,6 +128,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0303726/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/10b236c1250b52d22900/beck-enslingen-12",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6zmDYYcHojjseZTZOINlu45Fk42.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.1"
     },
     {
@@ -127,6 +139,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0306531/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/49653461d62a8a8a1ae7/beck-okand-avsandare-13",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qnnMH8FIZkslDTGWcT2Q4l08v5P.jpg",
+        runtime: "1h 27m",
         imdbRating: "6.0"
     },
     {
@@ -137,6 +150,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0306530/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/777d40eba6ce31e23184/beck-annonsmannen-14",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/q83GwYnvbfACda6Hde7pI8jMzMx.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.2"
     },
     {
@@ -147,6 +161,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0309348/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/e6e180358b5419f47f30/beck-pojken-i-glaskulan-15",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kEYTRwORL8vQGohSYObxO9JAp7q.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.1"
     },
     {
@@ -157,6 +172,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0303727/?ref_=tt_ov_ep_nx",
         tv4playUrl: "https://www.tv4play.se/program/a8c7e8aaef612245cade/beck-sista-vittnet-16",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o53WkUdf4b4GAmzVkrsZnC3OXVg.jpg",
+        runtime: "1h 40m",
         imdbRating: "6.3"
     },
     {
@@ -167,6 +183,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0831900/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/61856228526be78e921a/beck-skarpt-lage-17",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/zkFCL8yVEBgqTFPmgKKxgySkNzd.jpg",
+        runtime: "1h 30m",
         imdbRating: "6.4"
     },
     {
@@ -177,6 +194,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0889575/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/a5ee028905e50a16990c/beck-flickan-i-jordkallaren-18",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AeDQ3twmkfRsW75Mjic9Tk1KT7U.jpg",
+        runtime: "1h 32m",
         imdbRating: "5.9"
     },
     {
@@ -187,6 +205,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0889576/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/c9671ad336bfa49959c4/beck-gamen-19",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hqcmZS8202IzX1LNBYi4IWgVmk.jpg",
+        runtime: "1h 27m",
         imdbRating: "5.5"
     },
     {
@@ -197,6 +216,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0889574/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/9f949d3d2357d5877495/beck-advokaten-20",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9lWkC2IEBCov6HCZewFCL6r5Amj.jpg",
+        runtime: "1h 29m",
         imdbRating: "6.0"
     },
     {
@@ -207,6 +227,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0963215/?ref_=ttep_ep_5",
         tv4playUrl: "https://www.tv4play.se/program/9219165906748a5d44ff/beck-den-japanska-shungamalningen-21",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/99eIrqFdsnfhKAFcc3t6Ag3cfpB.jpg",
+        runtime: "1h 29m",
         imdbRating: "5.8"
     },
     {
@@ -217,6 +238,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0958902/?ref_=ttep_ep_6",
         tv4playUrl: "https://www.tv4play.se/program/72f2f7e3f09546df956b/beck-den-svaga-lanken-22",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4kUcp5Ns8IxDrdpJoPCkA5jqvkJ.jpg",
+        runtime: "1h 32m",
         imdbRating: "6.2"
     },
     {
@@ -227,6 +249,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0977307/?ref_=ttep_ep_7",
         tv4playUrl: "https://www.tv4play.se/program/feabfdc23803e07a5d27/beck-det-tysta-skriket-23",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iqKnExJGqJ0e3s6Aoru1wG7sUUr.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.1"
     },
     {
@@ -237,6 +260,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt0919160/?ref_=ttep_ep_8",
         tv4playUrl: "https://www.tv4play.se/program/f85dfd06fcef0acfed5b/beck-i-guds-namn-24",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jsvYf4iPD2QpDb1lDso6DvBqUpm.jpg",
+        runtime: "1h 27m",
         imdbRating: "6.4"
     },
     {
@@ -247,6 +271,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt1373497/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/328b3d2a927f8d10a83e/beck-i-stormens-oga-25",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ovJt5hz2Cfui3L0or0YzY1q2Ui2.jpg",
+        runtime: "1h 27m",
         imdbRating: "5.9"
     },
     {
@@ -257,6 +282,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt1373498/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/db3a7e84259d9495a69b/beck-levande-begravd-26",
         posterUrl: "https://image.tmdb.org/t/p/original/azr1VqxtANjZ6rdJgXNBaz2MCoP.jpg",
+        runtime: "1h 26m",
         imdbRating: "6.6"
     },
     {
@@ -267,6 +293,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt4186386/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/4faf9b39c585fe6be68e/beck-rum-302-27",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hkOrpwvxwIsBbv6Su1yTmSQyIv.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.3"
     },
     {
@@ -277,6 +304,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt4186390/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/c2a752d7733cb5dcaeff/beck-familjen-28",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fF30DiIwFp14Od9yvpcETI6tXIq.jpg",
+        runtime: "1h 30m",
         imdbRating: "5.9"
     },
     {
@@ -287,6 +315,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt4186542/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/0db9c4f44ded2e1bf12e/beck-invasionen-29",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pM2SMIgYk9LOuQK76uy0SwXIXOp.jpg",
+        runtime: "1h 29m",
         imdbRating: "5.7"
     },
     {
@@ -297,6 +326,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt4186548/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/8d72f4efe7df76b6fa91/beck-sjukhusmorden-30",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aC1kNRs1qlDFD69xWMfDvCaS624.jpg",
+        runtime: "1h 23m",
         imdbRating: "5.8"
     },
     {
@@ -307,6 +337,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt5246126/?ref_=ttep_ep_5",
         tv4playUrl: "https://www.tv4play.se/program/e4630850ed44950b71a5/beck-gunvald-31",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jJp7cbNG4vtw6eXFEXpAdFZ0Jtm.jpg",
+        runtime: "1h 30m",
         imdbRating: "5.9"
     },
     {
@@ -317,6 +348,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt5246132/?ref_=ttep_ep_6",
         tv4playUrl: "https://www.tv4play.se/program/3d83a6c610ea7bb73f01/beck-steinar-32",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/o9TLJaHw9ET0V3GRFG8Nd8Tj707.jpg",
+        runtime: "1h 31m",
         imdbRating: "6.4"
     },
     {
@@ -327,6 +359,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt5246134/?ref_=ttep_ep_7",
         tv4playUrl: "https://www.tv4play.se/program/2ce5a41b91bb83845063/beck-vags-ande-33",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xvb9rFLatsbaoArARUiacIqU3RW.jpg",
+        runtime: "1h 30m",
         imdbRating: "6.4"
     },
     {
@@ -337,6 +370,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt5246142/?ref_=ttep_ep_8",
         tv4playUrl: "https://www.tv4play.se/program/04de663a72f393b9ae5e/beck-sista-dagen-34",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xZuj8bYLDW9LTV5daekBYaWqHfa.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.4"
     },
     {
@@ -347,6 +381,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt7067324/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/fa80f754ccf7fc8a8a5a/beck-ditt-eget-blod-35",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kCvr5ydO1TzIVUgRFOfHkHdcQvW.jpg",
+        runtime: "1h 34m",
         imdbRating: "5.9"
     },
     {
@@ -357,6 +392,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt7696124/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/af47308db130e2ab4a6a/beck-den-tunna-isen-36",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/kjsZkYtn9EBtDrg97xhhh49LG2J.jpg",
+        runtime: "1h 37m",
         imdbRating: "5.8"
     },
     {
@@ -367,6 +403,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt7718830/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/ebc1b9a238138f5978ff/beck-utan-uppsat-37",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/Q0Ze9kGyEdq0MtuVQmXrwktgTQ.jpg",
+        runtime: "1h 30m",
         imdbRating: "6.1"
     },
     {
@@ -377,6 +414,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt7718840/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/58edc6973118b516087e/beck-djavulens-advokat-38",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cPGzSSbBT6ckvHmLkcNsn4J9MkJ.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.1"
     },
     {
@@ -387,6 +425,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt11653552/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/0dec4ece2da45c70ee75/beck-undercover-39",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7L1kiaEBbHFJWSpHCw3xVGcdYu1.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.1"
     },
     {
@@ -397,6 +436,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt13403370/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/7c9ca75c34860773c24e/beck-utom-rimligt-tvivel-40",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9A0dQwVVIxC5CUqbKLgd037ux1v.jpg",
+        runtime: "1h 29m",
         imdbRating: "6.3"
     },
     {
@@ -407,6 +447,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt13585338/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/7c9ca75c34860773c24e/beck-utom-rimligt-tvivel-40",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/m6KxrNO9wOlEfR9FloeQbLTuexM.jpg",
+        runtime: "1h 29m",
         imdbRating: "5.6"
     },
     {
@@ -417,6 +458,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt13585368/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/513450d7946cc9b68a40/beck-den-forlorade-sonen-42",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/klUcqApIE3HIew4i0SP3Imzzjea.jpg",
+        runtime: "1h 30m",
         imdbRating: "6.3"
     },
     {
@@ -427,6 +469,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt16913260/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/732e9a92b8bbfe666f3d/beck-ett-nytt-liv-43",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wsCp36sLUX5ebmfu1xMdeZ3KZHv.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.1"
     },
     {
@@ -437,6 +480,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt16913264/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/ef9b165a4584550fa0c9/beck-rage-room-44",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cMSp4iH10oGGKaS4KVXyOW2BQEG.jpg",
+        runtime: "1h 29m",
         imdbRating: "6.0"
     },
     {
@@ -447,6 +491,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt16951950/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/d10f1a3dda8392237b8c/beck-58-minuter-45",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9ao5eP8V5KkQ5tH8c7PTDzz5RV1.jpg",
+        runtime: "1h 28m",
         imdbRating: "5.1"
     },
     {
@@ -457,6 +502,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt16952010/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/2fe2182cf4b0ac15ef33/beck-den-gratande-polisen-46",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6pY6FCtDCDWw0j8xAI7L21kfIgB.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.3"
     },
     {
@@ -467,6 +513,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt23805828/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/692a2ec3ed64b51d4f2c/beck-dodsfallan-47",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9VeKMVhT6nF7vKe61AG9nBQBFQx.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.3"
     },
     {
@@ -477,6 +524,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt25405622/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/d4a87d9044f42db6f9fb/beck-quid-pro-quo-48",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/namapyO8O86GFyKZdDbWi28NS8A.jpg",
+        runtime: "1h 29m",
         imdbRating: "6.0"
     },
     {
@@ -487,6 +535,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt26492115/?ref_=ttep_ep_3",
         tv4playUrl: "https://www.tv4play.se/program/d6ee02d5cdc8baf84174/beck-inferno-49",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/co1vNGvNa8iCt249FZ4ZKN96NXv.jpg",
+        runtime: "1h 33m",
         imdbRating: "6.9"
     },
     {
@@ -497,6 +546,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt26492116/?ref_=ttep_ep_4",
         tv4playUrl: "https://www.tv4play.se/program/397859805c2f370250b7/beck-dodlage-50",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oepK0jK2hcv1X4uQ2Wquw9QtoLF.jpg",
+        runtime: "1h 28m",
         imdbRating: "6.2"
     },
     {
@@ -507,6 +557,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt31170265/?ref_=ttep_ep_1",
         tv4playUrl: "https://www.tv4play.se/program/7e4f84f9836421086dc2/beck-vilhelm-51",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5olfXarRgNO5Iq80gMxedm7e3ap.jpg",
+        runtime: "1h 29m",
         imdbRating: "5.9"
     },
     {
@@ -517,6 +568,7 @@ const beckMovies = [
         imdbUrl: "https://www.imdb.com/title/tt31170273/?ref_=ttep_ep_2",
         tv4playUrl: "https://www.tv4play.se/program/8e21ad7debd368a25066/beck-den-osynlige-mannen-52",
         posterUrl: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/vBnT9J2NDJXIlXyyypzf71T4OOX.jpg",
+        runtime: "1h 30m",
         imdbRating: "5.8"
     }
 ];

@@ -222,18 +222,25 @@ main {
 .movie-rating {
     display: flex;
     align-items: center;
+    gap: 15px;
     margin-bottom: 15px;
     padding: 8px 12px;
     background-color: #0B0E13;
     border-radius: 8px;
     border: 1px solid rgba(59, 163, 229, 0.2);
     width: fit-content;
+    flex-wrap: wrap;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .rating-label {
     color: #9AA2B1;
     font-size: 0.9rem;
-    margin-right: 8px;
     font-weight: 500;
 }
 
@@ -245,7 +252,11 @@ main {
 
 .rating-star {
     color: #FFD700;
-    margin-left: 4px;
+    font-size: 0.9rem;
+}
+
+.runtime-icon {
+    color: #9AA2B1;
     font-size: 0.9rem;
 }
 

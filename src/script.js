@@ -172,13 +172,31 @@ class BeckMovieGenerator {
         // Set movie information with year
         movieTitle.textContent = `${movie.title} (${movie.year})`;
         
-        // Handle IMDB rating display - only show if manually added to database
-        if (movie.imdbRating) {
-            movieRating.innerHTML = `
-                <span class="rating-label">IMDB:</span>
-                <span class="rating-value">${movie.imdbRating}</span>
-                <span class="rating-star">★</span>
-            `;
+        // Handle IMDB rating and runtime display
+        if (movie.imdbRating || movie.runtime) {
+            let ratingContent = '';
+            
+            if (movie.imdbRating) {
+                ratingContent += `
+                    <div class="rating-item">
+                        <span class="rating-label">IMDB:</span>
+                        <span class="rating-value">${movie.imdbRating}</span>
+                        <span class="rating-star">★</span>
+                    </div>
+                `;
+            }
+            
+            if (movie.runtime) {
+                ratingContent += `
+                    <div class="rating-item">
+                        <span class="rating-label">Längd:</span>
+                        <span class="rating-value">${movie.runtime}</span>
+                        <span class="runtime-icon">🕐</span>
+                    </div>
+                `;
+            }
+            
+            movieRating.innerHTML = ratingContent;
             movieRating.classList.remove('hidden');
         } else {
             movieRating.classList.add('hidden');

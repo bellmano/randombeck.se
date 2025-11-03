@@ -193,5 +193,84 @@ describe('fetchRatings.js', () => {
             expect(written).not.toContain('tv4playUrl:');
             expect(written).not.toContain('imdbRating:');
         });
+
+        test('should format movie with runtime but no posterUrl', async () => {
+            const runtimeMovie = `const beckMovies = [{
+                number: 1,
+                title: "Runtime Movie",
+                year: 2020,
+                imdbUrl: "https://imdb.com/title/tt1/",
+                runtime: "90 min"
+            }];`;
+            fs.readFileSync.mockReturnValue(runtimeMovie);
+            const writeFileSpy = jest.fn();
+            fs.writeFileSync.mockImplementation(writeFileSpy);
+            fetch.mockResolvedValue({
+                text: jest.fn().mockResolvedValue('8.5/10')
+            });
+
+            jest.isolateModules(() => {
+                require('../src/fetchRatings.js');
+            });
+
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const written = writeFileSpy.mock.calls[0][1];
+            expect(written).toContain('runtime: "90 min"');
+            expect(written).toContain('imdbRating: "8.5"');
+        });
+
+        test('should format movie with only imdbRating, no posterUrl or runtime', async () => {
+            const onlyImdbMovie = `const beckMovies = [{
+                number: 1,
+                title: "Only IMDB Movie",
+                year: 2020,
+                imdbUrl: "https://imdb.com/title/tt1/"
+            }];`;
+            fs.readFileSync.mockReturnValue(onlyImdbMovie);
+            const writeFileSpy = jest.fn();
+            fs.writeFileSync.mockImplementation(writeFileSpy);
+            fetch.mockResolvedValue({
+                text: jest.fn().mockResolvedValue('6.5/10')
+            });
+
+            jest.isolateModules(() => {
+                require('../src/fetchRatings.js');
+            });
+
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const written = writeFileSpy.mock.calls[0][1];
+            expect(written).toContain('imdbRating: "6.5"');
+            expect(written).not.toContain('runtime:');
+        });
+
+        test('should format movie with posterUrl and runtime but no imdbRating', async () => {
+            const posterRuntimeMovie = `const beckMovies = [{
+                number: 1,
+                title: "Poster Runtime Movie",
+                year: 2020,
+                imdbUrl: "https://imdb.com/title/tt1/",
+                posterUrl: "https://poster.jpg",
+                runtime: "110 min"
+            }];`;
+            fs.readFileSync.mockReturnValue(posterRuntimeMovie);
+            const writeFileSpy = jest.fn();
+            fs.writeFileSync.mockImplementation(writeFileSpy);
+            fetch.mockResolvedValue({
+                text: jest.fn().mockResolvedValue('no rating found')
+            });
+
+            jest.isolateModules(() => {
+                require('../src/fetchRatings.js');
+            });
+
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const written = writeFileSpy.mock.calls[0][1];
+            expect(written).toContain('posterUrl: "https://poster.jpg",');
+            expect(written).toContain('runtime: "110 min"');
+            expect(written).not.toContain('imdbRating:');
+        });
     });
 });

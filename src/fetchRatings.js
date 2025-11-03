@@ -89,9 +89,20 @@ async function updateRatings() {
         }
         if (movie.posterUrl) {
             result += `        posterUrl: "${movie.posterUrl}"`;
+            if (movie.runtime || movie.imdbRating) {
+                result += ',';
+            }
+        }
+        if (movie.runtime) {
+            if (!movie.posterUrl) result += ',';
+            result += `\n        runtime: "${movie.runtime}"`;
+            if (movie.imdbRating) {
+                result += ',';
+            }
         }
         if (movie.imdbRating) {
-            result += `,\n        imdbRating: "${movie.imdbRating}"`;
+            if (!movie.posterUrl && !movie.runtime) result += ',';
+            result += `\n        imdbRating: "${movie.imdbRating}"`;
         }
         result += '\n    }';
         return result;
