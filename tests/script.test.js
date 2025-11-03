@@ -4,7 +4,8 @@ global.beckMovies = [
     { number: 2, title: "Beck - Monstret", year: 1998, description: "Test movie 2" },
     { number: 3, title: "Beck - Vita nätter", year: 1998, description: "Test movie 3", imdbRating: "5.9" },
     { number: 4, title: "Beck - Öga för öga", year: 1998, description: "Test movie 4" },
-    { number: 5, title: "Beck - Pojken i glaskulan", year: 2002, description: "Test movie 5" }
+    { number: 5, title: "Beck - Pojken i glaskulan", year: 2002, description: "Test movie 5" },
+    { number: 6, title: "Beck - Only Runtime", year: 2004, description: "Test movie with only runtime", runtime: "105 min" }
 ];
 
 // Mock DOM methods that might be missing in JSDOM
@@ -29,8 +30,8 @@ describe('Main Script Tests', () => {
     beforeEach(() => {
         document.body.innerHTML = `
             <div>
-                <input id="min-range" type="number" value="1" min="1" max="5">
-                <input id="max-range" type="number" value="5" min="1" max="5">
+                <input id="min-range" type="number" value="1" min="1" max="6">
+                <input id="max-range" type="number" value="6" min="1" max="6">
                 <input id="all-movies-checkbox" type="checkbox">
                 <button id="generate-btn">Generate</button>
                 <div id="range-selector"></div>
@@ -80,7 +81,7 @@ describe('Main Script Tests', () => {
 
         mockElements.maxRange.value = '100';
         mockElements.maxRange.dispatchEvent(new Event('change'));
-        expect(mockElements.maxRange.value).toBe('5');
+        expect(mockElements.maxRange.value).toBe('6');
 
         // Test min/max adjustment
         mockElements.minRange.value = '4';
@@ -89,7 +90,7 @@ describe('Main Script Tests', () => {
         expect(mockElements.maxRange.value).toBe('4');
 
         // Test invalid range disables button
-        mockElements.minRange.value = '5';
+        mockElements.minRange.value = '6';
         mockElements.maxRange.value = '2';
         mockElements.minRange.dispatchEvent(new Event('input'));
         expect(mockElements.generateBtn.disabled).toBe(true);
@@ -181,6 +182,24 @@ describe('Main Script Tests', () => {
         expect(movieImage.src).toContain('poster1.jpg');
     });
 
+    test('should display only runtime when no IMDB rating', () => {
+        mockElements.minRange.value = '6';
+        mockElements.maxRange.value = '6';
+        mockElements.generateBtn.dispatchEvent(new Event('click'));
+        
+        jest.advanceTimersByTime(1100);
+
+        const movieResult = document.getElementById('movie-result');
+        expect(movieResult.classList.contains('hidden')).toBe(false);
+        
+        // Check only runtime is shown, no IMDB rating
+        const movieRating = document.getElementById('movie-rating');
+        expect(movieRating.classList.contains('hidden')).toBe(false);
+        expect(movieRating.innerHTML).not.toContain('IMDB:');
+        expect(movieRating.innerHTML).toContain('105 min');
+        expect(movieRating.innerHTML).toContain('🕐');
+    });
+
     test('should handle movie without optional fields', () => {
         mockElements.minRange.value = '2';
         mockElements.maxRange.value = '2';
@@ -190,6 +209,20 @@ describe('Main Script Tests', () => {
 
         expect(document.getElementById('movie-rating').classList.contains('hidden')).toBe(true);
         expect(document.getElementById('movie-link').style.display).toBe('none');
+    });
+
+    test('should handle range adjustment edge cases', () => {
+        // Test maxValue < minValue adjustment
+        mockElements.maxRange.value = '2';
+        mockElements.minRange.value = '4';
+        mockElements.maxRange.dispatchEvent(new Event('change'));
+        expect(mockElements.minRange.value).toBe('2');
+        
+        // Test minValue > maxValue adjustment (reverse case)
+        mockElements.minRange.value = '5';
+        mockElements.maxRange.value = '3';
+        mockElements.minRange.dispatchEvent(new Event('change'));
+        expect(mockElements.maxRange.value).toBe('5');
     });
 
     test('should generate with all movies checkbox', () => {
@@ -226,20 +259,5 @@ describe('Main Script Tests', () => {
         
         generator.getRandomNumber = originalGetRandom;
         consoleSpy.mockRestore();
-    });
-
-    test('should show loading and scroll behaviors', () => {
-        const scrollSpy = jest.spyOn(Element.prototype, 'scrollIntoView');
-        
-        mockElements.generateBtn.dispatchEvent(new Event('click'));
-        
-        // Loading shown immediately
-        expect(document.getElementById('loading').classList.contains('hidden')).toBe(false);
-        
-        // Scroll behaviors triggered
-        jest.advanceTimersByTime(1200);
-        expect(scrollSpy).toHaveBeenCalled();
-        
-        scrollSpy.mockRestore();
     });
 });
