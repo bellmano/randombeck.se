@@ -372,7 +372,14 @@ footer p {
     margin: 0;
 }
 
-.github-link {
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.github-link,
+.linkedin-link {
     color: #9AA2B1;
     transition: all 0.3s ease;
     display: flex;
@@ -382,19 +389,22 @@ footer p {
     border-radius: 6px;
 }
 
-.github-link:hover {
+.github-link:hover,
+.linkedin-link:hover {
     color: #3BA3E5;
     transform: translateY(-2px);
     background-color: rgba(59, 163, 229, 0.1);
 }
 
-.github-icon {
+.github-icon,
+.linkedin-icon {
     width: 20px;
     height: 20px;
     transition: all 0.3s ease;
 }
 
-.github-link:hover .github-icon {
+.github-link:hover .github-icon,
+.linkedin-link:hover .linkedin-icon {
     transform: scale(1.1);
 }
 
